@@ -10,12 +10,13 @@
         .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 100%;
   background-color: #f1f1f1;
-  position: fixed;
+ 
   height: 100%;
   overflow: auto;
 }
+
 
 /* Sidebar links */
 .sidebar a {
@@ -37,14 +38,14 @@
   color: white;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
+
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
@@ -55,7 +56,7 @@ div.content {
   div.content {margin-left: 0;}
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
@@ -84,6 +85,7 @@ div.content {
 </div>
 </div>
 
+
 <div class="row">
 <div class="col-md-3">
 
@@ -94,14 +96,14 @@ div.content {
   <a href="#contact">Courses</a>
   <a href="#about">Enrollment</a>
   <a href="#about">Payment</a>
-</div>
+
 </div>
 
 <div class="col-md-9">
-    <div class="content">
+
  @yield('content')
 
- 
+
 </div>
 </div>
 </div>
