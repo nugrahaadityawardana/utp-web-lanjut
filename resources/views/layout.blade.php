@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color:rgb(167, 167, 167);
  
   height: 100%;
   overflow: auto;
@@ -91,7 +91,7 @@ div.content {
 
 <div class="sidebar">
   <a class="active" href="#home">Home</a>
-  <a href="#news">Student</a>
+  <a href="{{ url('/students') }}">Student</a>
   <a href="#contact">Teacher</a>
   <a href="#contact">Courses</a>
   <a href="#about">Enrollment</a>
